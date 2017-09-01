@@ -1,0 +1,15 @@
+efault: &default
+  adapter: postgresql
+  database: nmap_development
+  username: postgres
+  password: zaman
+  host: localhost
+  reconnect: false
+  encoding: utf8
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+  database: mariam_blog_production
